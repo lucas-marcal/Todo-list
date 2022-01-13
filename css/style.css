@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,700;1,500&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background: rgb(32, 32, 32);
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 30px;
+}
+
+ul {
+    margin-top: 15px;
+    text-align: left;
+}
+
+li {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+li > input[type='checkbox']:checked + label {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.btn-delete {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(129, 46, 46);;
+    margin-left: auto;
+    border: none;
+    border-radius: 3px;
+    color: white;
+}
+
+.btn-delete:hover {
+    background-color: rgb(92, 32, 32);
+}
+
+.btn-delete:active {
+    background-color: rgb(92, 32, 32);
+    transform: scale(0.95);
+    font-size: 10px;
+}
+
+.checkbox {
+    margin-right: 10px;
+}
+
+.container {
+    font-size: 32px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.tarefa {
+    height: 40px;
+    padding: 10px;
+    border-radius: 11px;
+}
+
+.tarefa:focus {
+    outline: none;
+}
+
+.primary-btn {
+    margin: 0 15px;
+    width: 110px;
+    height: 45px;
+    border-radius: 11px;
+    background-color: rgb(32, 32, 32);
+    border-color: rgb(129, 46, 46);
+    border-width: 3px;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.primary-btn:hover {
+    background-color: rgba(0, 0, 0, 0.199);
+}
+
+.primary-btn:active {
+    transform: scale(0.95);
+}
