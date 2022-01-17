@@ -2,10 +2,6 @@ const btnsub = document.getElementById('sub');
 const texto = document.getElementById('texto');
 const lista = document.getElementById('lista');
 
-
-
-let DataBase = [{'tarefa': 'escovar os dentes', 'status':''}]
-
 const getDB = () => JSON.parse(localStorage.getItem('todoList')) ?? [];
 const setDB = (DataBase) => localStorage.setItem('todoList', JSON.stringify(DataBase));
 
